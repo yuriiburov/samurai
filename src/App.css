@@ -17,24 +17,3 @@
 .box {
   background-color: #fff;
 }
-
-.header {
-  grid-area: header;
-}
-
-.header img {
-  width: 60px;
-  height: 60px;
-}
-
-.nav {
-  grid-area: nav;
-}
-
-.content {
-  grid-area: content;
-}
-
-.content img {
-  width: 100%;
-}

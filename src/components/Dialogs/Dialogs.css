@@ -1,0 +1,39 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.user-dialog{
+  text-decoration: none;
+  color: #333;
+}
+
+.dialog{
+  display: flex;
+  align-items: center;
+  max-width: 12rem;
+  border-bottom: thin solid #eeeeee;
+}
+
+.dialog:hover{
+  background-color: #eeeeee;
+}
+
+.dialog__img{
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 100%;
+  padding: 4px;
+}
+
+.dialog__name{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.active .dialog {
+  background-color: #333333;
+  color: #fff;
+}
