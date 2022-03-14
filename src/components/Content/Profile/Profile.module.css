@@ -1,5 +1,7 @@
 .content {
   grid-area: content;
+  height: 88.6vh;
+  overflow: scroll;
 }
 
 .descriptionBlock {

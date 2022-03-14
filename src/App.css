@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 #root {
   background-color: #eee;
+  padding: 10px 0;
+  height: 100vh;
 }
 
 .app-wrapper {

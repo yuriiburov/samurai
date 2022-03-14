@@ -3,10 +3,10 @@ import MyPosts from "./MyPosts/MyPosts";
 import classes from './Profile.module.css';
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-const Profile = () => (
+const Profile = ({customStore}) => (
   <main className={`${ classes.content }`}>
-    <ProfileInfo banner='https://montegrappa.com.ua/wp-content/uploads/2019/03/Samurai-Banner.png'/>
-    <MyPosts/>
+    <ProfileInfo banner={customStore.profilePage.profile_banner}/>
+    <MyPosts customStore={customStore}/>
   </main>
 );
 

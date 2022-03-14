@@ -1,22 +1,22 @@
 import React from 'react';
 import Post from "../Post/Post";
 import classes from './MyPosts.module.css';
-import { postData } from "../../../utils";
 
-const MyPosts = () => {
+const MyPosts = ({customStore}) => {
+  const postsElements = customStore.profilePage.postData.map(post => <Post key={post.id} message={post.message} like={post.likesCount}/>)
+
   return (
     <div className={classes.descriptionBlock}>
       <div>
         <h3>My Posts</h3>
         <div>
-          <textarea></textarea>
+          <textarea />
           <br/>
           <button>Add post</button>
         </div>
       </div>
       <div>
-        <Post message={postData[0].message} like={postData[0].likesCount}/>
-        <Post message={postData[1].message} like={postData[1].likesCount}/>
+        {postsElements}
       </div>
     </div>
   );

@@ -1,0 +1,87 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  height: 88.6vh;
+}
+
+.items {
+  overflow-y: scroll;
+}
+
+.user-dialog {
+  text-decoration: none;
+  color: #333;
+}
+
+.dialog {
+  display: flex;
+  align-items: center;
+  max-width: 12rem;
+  height: 39px;
+  border-bottom: thin solid #eeeeee;
+}
+
+.dialog:hover {
+  background-color: #eeeeee;
+}
+
+.dialog__img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 100%;
+  padding: 4px;
+}
+
+.dialog__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.active .dialog {
+  background-color: #333333;
+  color: #fff;
+}
+
+.message-field {
+  display: flex;
+  flex-direction: column;
+  padding: 32px
+}
+
+.message-side {
+  padding: 13px;
+  border-radius: 13px;
+}
+
+.my-side {
+  margin-left: auto;
+  background-color: #333;
+  color: #fff;
+}
+
+.my-side .message {
+  text-align: right;
+}
+
+.another-side {
+  margin-right: auto;
+  border: thin solid #3338;
+}
+
+.message {
+  margin: 3px 0;
+}
+
+.empty-window{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.time{
+  font-size: 12px;
+  opacity: .6;
+}
