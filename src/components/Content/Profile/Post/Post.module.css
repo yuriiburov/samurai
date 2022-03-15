@@ -3,4 +3,44 @@
   height: 50px;
   object-fit: cover;
   border-radius: 100%;
+  margin-right: 8px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: #eeeeee;
+  margin-bottom: 10px;
+  border: thin solid #3337;
+}
+
+.postContent{
+  display: flex;
+}
+
+.postText {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  width: 820px;
+  word-wrap: break-word;
+}
+
+.postTime{
+  font-size: 14px;
+  opacity: .7;
+}
+
+.postLikes{
+  margin: auto 0 0 auto
+}
+
+.postHeart{
+  cursor: pointer;
+  color: #E5131677;
+  transition: .2s;
+}
+
+.postHeart:hover {
+  color: #E51316 !important;
 }

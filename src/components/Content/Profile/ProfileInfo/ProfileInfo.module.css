@@ -3,5 +3,42 @@
 }
 
 .descriptionBlock {
-  padding: 10px;
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+
+.ava {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding-right: 10px;
+}
+
+.userName{
+  font-family: 'Permanent Marker', cursive;
+  width: 820px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.status{
+  opacity: .6;
+  padding: 0 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.status:hover{
+  text-decoration: none;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.description{
+  margin: auto 0;
+  width: 700px;
+  word-wrap: break-word;
 }
