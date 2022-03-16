@@ -10,12 +10,18 @@ const App = () => {
   const [customStore, setCustomStore] = useState({
     profilePage: {
       profile_banner: 'https://coub-anubis-a.akamaized.net/coub_storage/background/cw_banner_image/a193121cbe9/786b6386668880d6f40fd/big_channel_1591389801_1qtv69s_1591251733_00032.jpg',
+      profile_icon: 'https://planetakino.ua/res/get-poster/00000000000000000000000000002535/1.jpg',
+      profile_description: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dfghvleuhvliehrvliejrhbvilbhjklebvnhljebvwlfbbhjehjbgjkehkhjgejkgejhjhgejhgehjkgejhehjghjerhgerhuuygfehkuveyrvuelwrykverwygwhbvkueweukhgehfeyuworgfuyewrogfhkuewrhifkuerwytdhuerwycgnkuerwycgnxukwdhjfggekwrhgfjwlqeuribfehilraguy',
       postData: [
-        { id: '1', message: 'Hi, i am working', likesCount: 3 },
+        { id: '1', message: 'Hi, i am working', likesCount: 3333 },
         { id: '2', message: 'Hello', likesCount: 10 },
-        { id: '3', message: 'more content', likesCount: 11 },
+        { id: '3', message: 'more content', likesCount: 111111111111111111111 },
         { id: '4', message: 'Bye', likesCount: 15 },
-        { id: '5', message: 'NomNomNoMMMftawkuyfgkyaugfkhrfkajbvhjaefbkejhwvbfhjdvbfjhbvewhjfbviewurhbveiwurbgwbvhelwbvhewjrbgehrwbghlerbglehrwbiuwbvheiwurhbviuewbhvieuwrhgiuwkfhjbhvliuwfehbvliuewfhvliesuhvliesuhvliseubwjbhviluewheurbhvweurbhvegrhbvieruahverhvluerhgilverhgilveha', likesCount: 13 },
+        {
+          id: '5',
+          message: 'NomNomNoMMMftawkuyfgkyaugfkhrfkajbvhjaefbkejhwvbfhjdvbfjhbvewhjfbviewurhbveiwurbgwbvhelwbvhewjrbgehrwbghlerbglehrwbiuwbvheiwurhbviuewbhvieuwrhgiuwkfhjbhvliuwfehbvliuewfhvliesuhvliesuhvliseubwjbhviluewheurbhvweurbhvegrhbvieruahverhvluerhgilverhgilveha',
+          likesCount: 13
+        },
         { id: '6', message: 'first post', likesCount: 28 },
       ],
     },
@@ -40,7 +46,27 @@ const App = () => {
             { id: '1', message: ['Hi'], time: '18:20' },
             { id: '2', message: ['Hi'], time: '18:20' },
             { id: '3', message: ['im Evgeniy'], time: '18:20' },
-            { id: '4', message: ['phphh', 'i know'], time: '18:20' }
+            { id: '4', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '5', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '6', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '7', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '8', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '9', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '10', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '11', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '12', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '13', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '14', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '15', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '16', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '17', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '18', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '19', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '20', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '21', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '22', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '23', message: ['phphh', 'i know'], time: '18:20' },
+            { id: '24', message: ['phphh', 'i know'], time: '18:20' }
           ]
         },
         {
@@ -89,7 +115,7 @@ const App = () => {
         },
       ]
     }
-  })
+  });
 
   return (
     <div className='app-wrapper'>

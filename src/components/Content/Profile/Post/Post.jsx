@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import classes from './Post.module.css';
 import moment from "moment";
 
-const Post = ({ message, likes, time }) => {
+const Post = ({ message, likes, time, icon }) => {
   const [like, setLike] = useState(false);
   const [likeCount, setLikeCount] = useState(likes)
 
@@ -15,17 +15,29 @@ const Post = ({ message, likes, time }) => {
     return bool ? setLikeCount(likeCount - 1) : setLikeCount(likeCount + 1);
   };
 
+  const format_number = (num) => {
+    const strNumber = parseInt(num).toString();
+    const len = strNumber.length;
+    if (len <= 3) {
+      return strNumber;
+    }
+    const isDevideThree = len % 3;
+    return isDevideThree > 0
+      ? strNumber.slice(0, isDevideThree) + "," + strNumber.slice(isDevideThree, len).match(/\d{3}/g).join(",")
+      : strNumber.slice(isDevideThree, len).match(/\d{3}/g).join(",");
+  }
+
   return (
     <div className={classes.post}>
       <div className={classes.postContent}>
-        <img className={classes.icon} src='https://planetakino.ua/res/get-poster/00000000000000000000000000002535/1.jpg'
+        <img className={classes.icon} src={icon}
              alt={'icon'}/>
         <div>
           <div className={classes.postText}>{message}</div>
           <span className={classes.postTime}>{moment(wasPosted, 'YYYYMMDDHHmm').format('lll')}</span>
         </div>
         <div className={classes.postLikes}>
-          {likeCount}
+          {format_number(likeCount)}
           <span onClick={() => isLike(like)} className={classes.postHeart}
                 style={like ? { color: '#E51316' } : { color: '#E5131677' }}>♥
           </span>

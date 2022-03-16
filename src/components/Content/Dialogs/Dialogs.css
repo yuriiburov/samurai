@@ -45,9 +45,14 @@
 }
 
 .message-field {
+  padding: 32px;
+}
+
+.our-message {
   display: flex;
   flex-direction: column;
-  padding: 32px
+  height: 70vh;
+  overflow-y: scroll;
 }
 
 .message-side {
@@ -74,14 +79,34 @@
   margin: 3px 0;
 }
 
-.empty-window{
+.empty-window {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.time{
+.time {
   font-size: 12px;
-  opacity: .6;
+  color: #eeeeee;
 }
+
+.send-message {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: flex-end;
+}
+
+.send-text {
+  resize: none;
+  outline: none;
+}
+
+.send-text::-webkit-scrollbar{
+  width: 0;
+}
+
+/*.send-btn {*/
+/*}*/
